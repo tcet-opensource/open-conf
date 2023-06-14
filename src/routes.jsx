@@ -16,27 +16,26 @@ export const routes = [
   },
   {
     icon: UserCircleIcon,
-    name: "profile",
-    path: "/profile",
-    element: <Profile />,
+    name: "About",              // Need of making the About page
+    path: "#about",
+    // element: <Profile />,
   },
   {
     icon: ArrowRightOnRectangleIcon,
-    name: "Sign In",
-    path: "/sign-in",
-    element: <SignIn />,
+    name: "Agenda",            // Need of making the Agenda page
+    path: "#agenda",
+    // element: <SignIn />,
   },
   {
     icon: UserPlusIcon,
-    name: "Sign Up",
-    path: "/sign-up",
-    element: <SignUp />,
+    name: "Organizers",        // Need of making the Organizers page
+    path: "#organizers",
+    // element: <SignUp />,
   },
   {
     icon: DocumentTextIcon,
-    name: "Docs",
-    href: "https://www.material-tailwind.com/docs/react/installation",
-    target: "_blank",
+    name: "FAQs",              // Need of making the FAQs page
+    href: "#faqs",
     element: "",
   },
 ];
