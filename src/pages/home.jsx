@@ -31,8 +31,7 @@ export function Home() {
                 TCET OPEN CONF
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-              Experience the power of networking and connection at our event, where diverse professionals come together to foster collaboration, innovation and a brighter future.
-              </Typography>
+              "Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation, where students and industry experts come together to shape the future of open-source technology."</Typography>
             </div>
           </div>
         </div>
@@ -65,8 +64,8 @@ export function Home() {
                 About
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-              Elevate your professional journey where top experts, leaders and peers converge. Experience a transformative learning experience at our event which provides a dynamic platform to learn, connect and grow. Propel your success to new horizons in this unparalleled event.
-              </Typography>
+              OpenConf is an expo event marking the product launch of TCET Open Source. It showcases cutting-edge projects, hosts inspiring keynotes/sessions, and facilitates networking and collaboration. With a diverse community of developers, industry leaders, and enthusiasts, OpenConf fosters a spirit of transparency and empowerment. It welcomes participants from TCET and outside organizations who share a passion for open source. Join us to learn, share, and shape the future of technology in this dynamic event.
+</Typography>
               <Button variant="outlined">read more</Button>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
@@ -87,8 +86,7 @@ export function Home() {
                     TCET Open Source
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                  TCET Open Source is an organization where software is not just a commodity to be bought and sold, but a collaborative effort that brings people together to solve problems and build something greater than themselves.
-
+                  TCET Open Source is a vibrant organisation dedicated to open-source development and collaboration. It offers students and enthusiasts a platform to contribute to projects, gain hands-on experience, and solve real-world problems. TCET Open Source fosters a culture of learning, building, and innovation. 
                   </Typography>
                 </CardBody>
               </Card>

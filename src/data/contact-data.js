@@ -9,20 +9,19 @@ export const contactData = [
     title: "Product launch",
     icon: StarIcon,
     description:
-      "Launch of 5+ products made in the span of 3 months.",
+      "Product launch is an exciting highlight of the event where TCET Open Source showcases its latest innovative projects. Attendees can experience live demos, interact with the creators, and witness the cutting-edge advancements in open-source technology",
   },
   {
     title: "Lightening talks",
     icon: PresentationChartLineIcon,
     description:
-      "Multiple discussions by industry experts; talking about leading tech and importance of open source.",
+      "These fast-paced talks offer a diverse range of perspectives, covering various topics such as emerging technologies, best practices, and real-world use cases. Attendees can expect to gain valuable knowledge, discover new trends, and be inspired. ",
   },
   {
     title: "Panel discussion",
     icon: RocketLaunchIcon,
     description:
-      "Panel of experts from the open source community.",
-  },
+"Panel discussions are dynamic and interactive sessions featuring a diverse panel of open-source experts, CEOs, and advocates. These discussions provide a platform for in-depth conversations and knowledge-sharing on relevant topics in the open-source landscape. ",  },
 ];
 
 export default contactData;
