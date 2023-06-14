@@ -6,22 +6,22 @@ import {
 
 export const contactData = [
   {
-    title: "Excelent Services",
+    title: "Product launch",
     icon: StarIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Launch of 5+ products made in the span of 3 months.",
   },
   {
-    title: "Grow Your Market",
+    title: "Lightening talks",
     icon: PresentationChartLineIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Multiple discussions by industry experts; talking about leading tech and importance of open source.",
   },
   {
-    title: "Launch Time",
+    title: "Panel discussion",
     icon: RocketLaunchIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Panel of experts from the open source community.",
   },
 ];
 
