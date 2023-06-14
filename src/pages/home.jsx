@@ -6,8 +6,6 @@ import {
   Typography,
   Button,
   IconButton,
-  Input,
-  Textarea,
 } from "@material-tailwind/react";
 import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
@@ -195,7 +193,7 @@ export function Home() {
             </Button>
           </form> */}
 
-          <FAQs />
+          <FAQs />      {/* Make changes here for the FAQs section */}
         </div>
       </section>
       <div className="bg-blue-gray-50/50">

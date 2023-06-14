@@ -97,5 +97,4 @@ FAQs.propTypes = {
 
 FAQs.displayName = "/src/pages/faqs.jsx";
 
-
 export default FAQs;
