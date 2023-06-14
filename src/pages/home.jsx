@@ -34,22 +34,18 @@ export function Home() {
                 Material Tailwind. It features multiple components based on the
                 Tailwind CSS and Material Design by Google.
               </Typography>
-              <a
-                href="https://www.material-tailwind.com/blocks?ref=mtkr"
-                // {/* target="_blank" */}
-              >
                 {/* <Button variant="gradient" size="sm" color="blue" className="mt-6 text-base"> 
                   Action
                 </Button> */}
-
-                <button className="action mx-auto mt-6 ">
-                    Sign up
-                    <div className="arrow-wrapper">
-                        <div className="arrow"></div>
-
-                    </div>
+                
+                <a href="/" className="mx-auto mt-6 w-max flex flex-row items-center justify-center">
+                <button className="action ">
+                      Sign Up
+                      <div className="arrow-wrapper">
+                          <div className="arrow"></div>
+                      </div>
                 </button>
-              </a>
+                </a>
             </div>
           </div>
         </div>

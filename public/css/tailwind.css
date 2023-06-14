@@ -13,31 +13,32 @@
     border: 0;
     border-radius: 20px;
     color: var(--secondary-color);
-    padding: 0.8em 1.2em;
+    padding: 0.7em 1.2em;
     background: var(--primary-color);
     display: flex;
     transition: 0.2s background;
     align-items: center;
     gap: 0.6em;
     font-weight: bold;
-  }
+    width: max-content;
+}
   
-  .action .arrow-wrapper {
+.action .arrow-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .action .arrow {
+.action .arrow {
     margin-top: 1px;
     width: var(--arrow-width);
     background: var(--primary-color);
     height: var(--arrow-stroke);
     position: relative;
     transition: 0.2s;
-  }
+}
   
-  .action .arrow::before {
+.action .arrow::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
