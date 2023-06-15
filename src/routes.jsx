@@ -1,4 +1,4 @@
-import { Home, Profile, SignIn, SignUp } from "@/pages";
+import { Home } from "@/pages";
 import {
   HomeIcon,
   UserCircleIcon,
@@ -16,28 +16,23 @@ export const routes = [
   },
   {
     icon: UserCircleIcon,
-    name: "profile",
-    path: "/profile",
-    element: <Profile />,
+    name: "About",              // Need of making the About page
+    path: "#about",
   },
   {
     icon: ArrowRightOnRectangleIcon,
-    name: "Sign In",
-    path: "/sign-in",
-    element: <SignIn />,
+    name: "Agenda",            // Need of making the Agenda page
+    path: "#agenda",
   },
   {
     icon: UserPlusIcon,
-    name: "Sign Up",
-    path: "/sign-up",
-    element: <SignUp />,
+    name: "Organizers",        // Need of making the Organizers page
+    path: "#organizers",
   },
   {
     icon: DocumentTextIcon,
-    name: "Docs",
-    href: "https://www.material-tailwind.com/docs/react/installation",
-    target: "_blank",
-    element: "",
+    name: "FAQs",              // Need of making the FAQs page
+    href: "#faqs",
   },
 ];
 

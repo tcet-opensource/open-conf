@@ -6,13 +6,12 @@ import {
   Typography,
   Button,
   IconButton,
-  Input,
-  Textarea,
 } from "@material-tailwind/react";
 import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import { FAQs } from ".";
 
 export function Home() {
   return (
@@ -35,6 +34,18 @@ export function Home() {
                 Material Tailwind. It features multiple components based on the
                 Tailwind CSS and Material Design by Google.
               </Typography>
+                {/* <Button variant="gradient" size="sm" color="blue" className="mt-6 text-base"> 
+                  Action
+                </Button> */}
+                
+                <a href="/" className="mx-auto mt-6 w-max flex flex-row items-center justify-center">
+                <button className="action ">
+                      Sign Up
+                      <div className="arrow-wrapper">
+                          <div className="arrow"></div>
+                      </div>
+                </button>
+                </a>
             </div>
           </div>
         </div>
@@ -108,7 +119,7 @@ export function Home() {
       </section>
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
-          <PageTitle heading="Here are our heroes">
+          <PageTitle heading="Organizers" id="organizers">    {/* Make changes here for Organizers */}
             According to the National Oceanic and Atmospheric Administration,
             Ted, Scambos, NSIDClead scentist, puts the potentially record
             maximum.
@@ -163,7 +174,8 @@ export function Home() {
               </Card>
             ))}
           </div>
-          <PageTitle heading="Want to work with us?">
+
+          {/* <PageTitle heading="Want to work with us?">
             Complete this form and we will get back to you in 24 hours.
           </PageTitle>
           <form className="mx-auto mt-12 max-w-3xl text-center">
@@ -175,7 +187,9 @@ export function Home() {
             <Button variant="gradient" size="lg" className="mt-8">
               Send Message
             </Button>
-          </form>
+          </form> */}
+
+          <FAQs />      {/* Make changes here for the FAQs section */}
         </div>
       </section>
       <div className="bg-blue-gray-50/50">
