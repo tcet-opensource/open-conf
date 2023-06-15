@@ -29,7 +29,7 @@ export function FAQs({ questions }) {
             
             {questions.map(({header, paragraph}, index) => (
                 <Accordion key={index} open={open === index+1} animate={customAnimation}>
-                    <AccordionHeader onClick={() => handleOpen(index+1)} className="text-blue-gray-900 font-medium">
+                    <AccordionHeader onClick={() => handleOpen(index+1)} className="text-blue-gray-900 font-medium text-left">
                         {header}
                     </AccordionHeader>
                     <AccordionBody>
