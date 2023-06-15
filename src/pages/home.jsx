@@ -27,25 +27,18 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Your story starts with us.
+                TCET OPEN CONF
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                This is a simple example of a Landing Page you can build using
-                Material Tailwind. It features multiple components based on the
-                Tailwind CSS and Material Design by Google.
-              </Typography>
-                {/* <Button variant="gradient" size="sm" color="blue" className="mt-6 text-base"> 
-                  Action
-                </Button> */}
-                
-                <a href="/" className="mx-auto mt-6 w-max flex flex-row items-center justify-center">
+              "Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation, where students and industry experts come together to shape the future of open-source technology."</Typography>
+              <a href="/" className="mx-auto mt-6 w-max flex flex-row items-center justify-center">
                 <button className="action ">
                       Sign Up
                       <div className="arrow-wrapper">
                           <div className="arrow"></div>
                       </div>
                 </button>
-                </a>
+              </a>
             </div>
           </div>
         </div>
@@ -75,18 +68,11 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                About
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
-                <br />
-                <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
-              </Typography>
+              OpenConf is an expo event marking the product launch of TCET Open Source. It showcases cutting-edge projects, hosts inspiring keynotes/sessions, and facilitates networking and collaboration. With a diverse community of developers, industry leaders, and enthusiasts, OpenConf fosters a spirit of transparency and empowerment. It welcomes participants from TCET and outside organizations who share a passion for open source. Join us to learn, share, and shape the future of technology in this dynamic event.
+</Typography>
               <Button variant="outlined">read more</Button>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
@@ -104,12 +90,10 @@ export function Home() {
                     color="blue-gray"
                     className="mb-3 font-bold"
                   >
-                    Top Notch Services
+                    TCET Open Source
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                  TCET Open Source is a vibrant organisation dedicated to open-source development and collaboration. It offers students and enthusiasts a platform to contribute to projects, gain hands-on experience, and solve real-world problems. TCET Open Source fosters a culture of learning, building, and innovation. 
                   </Typography>
                 </CardBody>
               </Card>
@@ -147,10 +131,8 @@ export function Home() {
       </section>
       <section className="relative bg-blue-gray-50/50 py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle heading="Build something">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
+          <PageTitle heading="Agenda">
+            After a warm welcome and some great speeches, the promotion and quick talks about our product launches by open source will commence. A panel of discussion shall be held later.
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             {contactData.map(({ title, icon, description }) => (
