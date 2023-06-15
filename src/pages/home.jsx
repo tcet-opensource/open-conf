@@ -108,7 +108,7 @@ export function Home() {
             Ted, Scambos, NSIDClead scentist, puts the potentially record
             maximum.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-5">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
