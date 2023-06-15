@@ -7,24 +7,24 @@ import {
 export const featuresData = [
   {
     color: "blue",
-    title: "Awarded Agency",
+    title: "Learn",
     icon: StarIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "TCET OpenConf offers a dynamic learning environment through presentations, lightning talks, and panel discussions led by industry experts and open-source advocates. Attendees gain valuable knowledge, insights into current trends, and innovative approaches in the open-source domain."
   },
   {
     color: "red",
-    title: "Free Revisions",
+    title: "Connect",
     icon: ArrowPathIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "TCET OpenConf creates a vibrant community by bringing together students, professionals, open-source enthusiasts, and industry leaders. Attendees have the opportunity to connect with like-minded individuals, engage in discussions, and establish valuable networks. ",
   },
   {
     color: "teal",
-    title: "Verified Company",
+    title: "Grow",
     icon: FingerPrintIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "TCET OpenConf is an exquisite event that provides valuable insights, career-building opportunities, and skill development in the open-source domain. Attendees have the chance to learn from experts, connect with a diverse community, and empower their personal and professional growth.",
   },
 ];
 
