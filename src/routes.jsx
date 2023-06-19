@@ -30,7 +30,6 @@ export const routes = [
     path: "#organizers",
   },
   {
-    icon: DocumentTextIcon,
     name: "FAQs",              // Need of making the FAQs page
     href: "#faqs",
   },

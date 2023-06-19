@@ -48,10 +48,10 @@ export function Navbar({ brandName, routes, action }) {
               target={target}
               className="flex items-center gap-1 p-1 font-normal"
             >
-              {icon &&
+              {/* {icon &&
                 React.createElement(icon, {
                   className: "w-[18px] h-[18px] opacity-75 mr-1",
-                })}
+                })} */}
               {name}
             </Link>
           )}

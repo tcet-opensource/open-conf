@@ -7,15 +7,13 @@ export const teamData = [
       {
         color: "light-blue",
         name: "twitter",
+        href: "https://twitter.com/I_am_prathik"
       },
       {
         color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/prathik-shetty15/"
+      }
     ],
   },
   {
@@ -26,15 +24,13 @@ export const teamData = [
       {
         color: "light-blue",
         name: "twitter",
+        href: "https://twitter.com/vish__rt"
       },
       {
         color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/vish-rt/"
+      }
     ],
   },
   {
@@ -45,15 +41,13 @@ export const teamData = [
       {
         color: "light-blue",
         name: "twitter",
+        href: "https://twitter.com/demonkillerrr"
       },
       {
         color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/gaurang-vishwakarma/"
+      }
     ],
   },
   {
@@ -64,14 +58,12 @@ export const teamData = [
       {
         color: "light-blue",
         name: "twitter",
+        href: "https://twitter.com/jayeshvp24"
       },
       {
         color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/jayeshvp24/"
       },
     ],
   },
@@ -83,15 +75,14 @@ export const teamData = [
       {
         color: "light-blue",
         name: "twitter",
+        href: "https://twitter.com/tejasnair9977"
       },
       {
         color: "blue",
-        name: "facebook",
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/tejasnair9977/"
       },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
+      
     ],
   },
 ];

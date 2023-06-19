@@ -117,9 +117,9 @@ export function Home() {
                 position={position}
                 socials={
                   <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
+                    {socials.map(({ color, name, href }) => (
                       <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-lg fa-${name}`} />
+                        <a href={href} target="_blank" className={`fa-brands text-lg fa-${name}`} />
                       </IconButton>
                     ))}
                   </div>
