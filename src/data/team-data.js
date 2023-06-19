@@ -1,6 +1,6 @@
 export const teamData = [
   {
-    img: "/img/organisers/prathik2.jpg",
+    img: "/img/organisers/prathik2.JPG",
     name: "Prathik Shetty",
     position: "ML developer",
     socials: [
@@ -34,7 +34,7 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/organisers/Gaurang3.jpg",
+    img: "/img/organisers/Gaurang3.JPG",
     name: "Gaurang Vishwakarma",
     position: "DevOps Engineer",
     socials: [
