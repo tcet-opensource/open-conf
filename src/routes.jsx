@@ -11,7 +11,7 @@ export const routes = [
   {
     icon: HomeIcon,
     name: "home",
-    path: "/home",
+    path: "#home",
     element: <Home />,
   },
   {
@@ -20,14 +20,14 @@ export const routes = [
     path: "#about",
   },
   {
-    icon: ArrowRightOnRectangleIcon,
-    name: "Agenda",            // Need of making the Agenda page
-    path: "#agenda",
-  },
-  {
     icon: UserPlusIcon,
     name: "Organizers",        // Need of making the Organizers page
     path: "#organizers",
+  },
+  {
+    icon: ArrowRightOnRectangleIcon,
+    name: "Agenda",            // Need of making the Agenda page
+    path: "#agenda",
   },
   {
     name: "FAQs",              // Need of making the FAQs page

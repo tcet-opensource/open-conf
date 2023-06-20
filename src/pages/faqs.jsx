@@ -75,7 +75,7 @@ FAQs.defaultProps = {
         }, 
         {
             header: "Is this In Person Event accessible to all students?",
-            paragraph: "Pls note the In person event is only accessible to TCET students due to lack of accommodation. But you can attend the event remotely if the organisers livestream it.",
+            paragraph: "This event is accesible to everyone. We welcome students from other colleges as well. Tickets will be issued.",
         },
         {
             header: "Will there be any opportunities for networking with the speakers and experts?",
