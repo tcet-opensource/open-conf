@@ -51,7 +51,7 @@ FAQs.defaultProps = {
         }, 
         {
             header: "When is the event taking place?",
-            paragraph: "The event is scheduled to take place on 15th July,2023 . Please note that the date is subject to change, so we recommend checking the event website or contacting the organizers for the most up-to-date information.",
+            paragraph: "The event is scheduled to take place on 21st July,2023 . Please note that the date is subject to change, so we recommend checking the event website or contacting the organizers for the most up-to-date information.",
         }, 
         {
             header: "Where is the event being held?",
