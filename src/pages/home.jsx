@@ -36,11 +36,12 @@ export function Home() {
                 future of open-source technology."
               </Typography>
               <a
-                href="/"
+                href="https://twitter.com/tcetopensource"
+                target="blank"
                 className="mx-auto mt-6 flex w-max flex-row items-center justify-center"
               >
                 <button className="action ">
-                  Sign Up
+                  Stay Tuned
                   <div className="arrow-wrapper">
                     <div className="arrow"></div>
                   </div>
@@ -96,7 +97,7 @@ export function Home() {
                 <CardHeader className="relative h-56">
                   <img
                     alt="Card Image"
-                    src="/about.jpg`"
+                    src="/about.jpg"
                     className="h-full w-full"
                   />
                 </CardHeader>
@@ -130,7 +131,7 @@ export function Home() {
             The team of amazing organizers behind nurturing open source
             community through TCET Open Conf to guide young budding developers.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-5">
+          <div className="mt-20 grid grid-cols-1 gap-12 gap-x-20 md:grid-cols-2 2xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
