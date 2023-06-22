@@ -85,6 +85,24 @@ export const teamData = [
       
     ],
   },
+  {
+    img: "/img/organisers/saifee github.jpg",
+    name: "Saif Saifee",
+    position: "Github Campus Expert",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+        href: "https://twitter.com/SaifSaifee_dev"
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/saifuddinsaifee"
+      },
+      
+    ],
+  },
 ];
 
 export default teamData;
