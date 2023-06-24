@@ -2,7 +2,7 @@ export const teamData = [
   {
     img: "/img/organisers/prathik2.JPG",
     name: "Prathik Shetty",
-    position: "ML developer",
+    position: "AI Lead | Machine Learning developer",
     socials: [
       {
         color: "light-blue",
@@ -19,7 +19,7 @@ export const teamData = [
   {
     img: "/img/organisers/vishal2.jpg",
     name: "Vishal Rawat",
-    position: "Backend Developer",
+    position: "Management Lead | Backend Developer",
     socials: [
       {
         color: "light-blue",
@@ -36,7 +36,7 @@ export const teamData = [
   {
     img: "/img/organisers/Gaurang3.JPG",
     name: "Gaurang Vishwakarma",
-    position: "DevOps Engineer",
+    position: "Admin | DevOps/Production Engineer",
     socials: [
       {
         color: "light-blue",
@@ -53,7 +53,7 @@ export const teamData = [
   {
     img: "/img/organisers/Jayesh.jpg",
     name: "Jayesh Potlabattini",
-    position: "Full Stack Developer",
+    position: "Web Lead | Full Stack Developer",
     socials: [
       {
         color: "light-blue",
@@ -70,7 +70,7 @@ export const teamData = [
   {
     img: "/img/organisers/hitansh_doshi2.jpg",
     name: "Hitansh Doshi",
-    position: "Full Stack Developer",
+    position: "Backend Lead | Full Stack Developer",
     socials: [
       {
         color: "light-blue",
@@ -87,7 +87,7 @@ export const teamData = [
   {
     img: "/img/organisers/tejas.png",
     name: "Tejas Nair",
-    position: "Software Developer",
+    position: "Backend Co-Lead | Software Developer",
     socials: [
       {
         color: "light-blue",
