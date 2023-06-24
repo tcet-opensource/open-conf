@@ -63,8 +63,9 @@ export function Navbar({ brandName, routes, action }) {
   return (
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
-        <Link to="/">
-          <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
+        <Link to="/" className="flex" >
+          <img src="/openconf.png" width="30" height="30" className="object-contain" />
+          <Typography className="mr-4 ml-2 cursor-pointer py-1.5 ont-bold">
             {brandName}
           </Typography>
         </Link>
@@ -127,9 +128,9 @@ Navbar.defaultProps = {
       href="mailto:opensource@tcetmumbai.in"
       target="_blank"
     >
-      <Button variant="gradient" size="sm" fullWidth>
-        Contact Us
-      </Button>
+      <button className="action !bg-blue-200 !text-black hover:!bg-blue-500">
+        Contact us
+      </button>
     </a>
   ),
 };

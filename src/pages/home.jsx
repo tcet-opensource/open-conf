@@ -10,18 +10,21 @@ import {
 import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData, contactData } from "@/data";
+import { featuresData, teamData, contactData, sponsorData } from "@/data";
 import { FAQs } from ".";
 
 export function Home() {
   return (
     <>
-      <div id="#home" className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
+      <div
+        id="#home"
+        className="relative flex h-screen content-center items-center justify-center pb-32 pt-16"
+      >
         <div className="absolute top-0 h-full w-full bg-[url('/hero.jpg')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
-            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+            <div className="ml-auto mr-auto w-full rounded-xl border border-gray-800 bg-gray-900 bg-opacity-50 p-4 text-center lg:w-8/12 lg:p-10 ">
               <Typography
                 variant="h1"
                 color="white"
@@ -29,7 +32,7 @@ export function Home() {
               >
                 TCET OPEN CONF
               </Typography>
-              <Typography variant="lead" color="white" className="opacity-80">
+              <Typography variant="lead" color="white" className="">
                 "Unlock the Power of Open Source at TCET OpenConf! Join us for a
                 day of inspiration, collaboration, and cutting-edge innovation,
                 where students and industry experts come together to shape the
@@ -123,47 +126,14 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section id="organizers" className="px-4 pb-48 pt-20">
-        <div className="container mx-auto">
-          <PageTitle heading="Organizers" id="organizers">
-            {" "}
-            {/* Make changes here for Organizers */}
-            The team of amazing organizers behind nurturing open source
-            community through TCET Open Conf to guide young budding developers.
-          </PageTitle>
-          <div className="mt-20 grid grid-cols-1 gap-12 gap-x-20 md:grid-cols-2 2xl:grid-cols-4">
-            {teamData.map(({ img, name, position, socials }) => (
-              <TeamCard
-                key={name}
-                img={img}
-                name={name}
-                position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name, href }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <a
-                          href={href}
-                          target="_blank"
-                          className={`fa-brands text-lg fa-${name}`}
-                        />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-      <section  className="relative bg-blue-gray-50/50 px-4 py-24">
+
+      <section className="relative bg-blue-gray-50/50 px-4 py-24">
         <div id="agenda" className="container mx-auto">
           <PageTitle heading="Agenda">
             After a warm welcome and some great speeches, the promotion and
             quick talks about our product launches by open source will commence.
             A panel of discussion shall be held later.
           </PageTitle>
-
           <div className="mx-auto mb-48 mt-20 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             {contactData.map(({ title, icon, description }) => (
               <Card
@@ -199,7 +169,87 @@ export function Home() {
               Send Message
             </Button>
           </form> */}
+          <section id="sponsors" className="px-4 pb-48 pt-20">
+            <div className="container mx-auto">
+              <PageTitle heading="Sponsors">
+                {" "}
+                {/* Make changes here for Organizers */}
+                Our incredible sponsors to fuel our event and making open source
+                widely accessible to individuals.
+              </PageTitle>
+              <div className=" mt-12 grid grid-cols-1 gap-12 gap-x-24 text-center ">
+                {sponsorData.map(({ sponsors, title }) => (
+                  <div className="">
+                    <h1 className="text-3xl font-medium ">{title}</h1>
+                    {sponsors.length ? (
+                      <div className="mt-4 rounded-lg bg-gray-100 p-4 shadow-md 
+                      grid grid-cols-2 lg:grid-cols-4 gap-8 justify-between
+                      ">
+                        {sponsors.map(({name, img}) => (
+                        <TeamCard
+                          key={name}
+                          img={img}
+                          name={name}
+                          // position={position}
+                          // socials={
+                          //   <div className="flex items-center gap-2">
+                          //     {socials.map(({ color, name, href }) => (
+                          //       <IconButton key={name} color={color} variant="text">
+                          //         <a
+                          //           href={href}
+                          //           target="_blank"
+                          //           className={`fa-brands text-lg fa-${name}`}
+                          //         />
+                          //       </IconButton>
+                          //     ))}
+                          //   </div>
+                          // }
+                        />
+                        ))}
+                      </div>
+                    ) : (
+                      <h2 className="text-3xl shadow-md w-[60%] italic bg-gray-100 rounded-lg mx-auto p-4 lg:p-8 mt-4 ">Coming Soon</h2>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
           <FAQs /> {/* Make changes here for the FAQs section */}
+        </div>
+      </section>
+
+      <section id="organizers" className="px-4 pb-48 pt-20">
+        <div className="container mx-auto">
+          <PageTitle heading="Organizers" id="organizers">
+            {" "}
+            {/* Make changes here for Organizers */}
+            The team of amazing organizers behind nurturing open source
+            community through TCET Open Conf to guide young budding developers.
+          </PageTitle>
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-5">
+            {teamData.map(({ img, name, position, socials }) => (
+              <TeamCard
+                key={name}
+                img={img}
+                name={name}
+                position={position}
+                socials={
+                  <div className="flex items-center gap-2">
+                    {socials.map(({ color, name, href }) => (
+                      <IconButton key={name} color={color} variant="text">
+                        <a
+                          href={href}
+                          target="_blank"
+                          className={`fa-brands text-lg fa-${name}`}
+                        />
+                      </IconButton>
+                    ))}
+                  </div>
+                }
+              />
+            ))}
+          </div>
         </div>
       </section>
       <div className="bg-blue-gray-50/50">

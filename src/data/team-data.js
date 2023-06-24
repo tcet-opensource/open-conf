@@ -68,6 +68,23 @@ export const teamData = [
     ],
   },
   {
+    img: "/img/organisers/hitansh_doshi2.jpg",
+    name: "Hitansh Doshi",
+    position: "Full Stack Developer",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+        href: "https://twitter.com/hitansh_k"
+      },
+      {
+        color: "blue",
+        name: "globe",
+        href: "https://www.linkedin.com/in/hitansh-doshi-b81530197/"
+      },      
+    ],
+  },
+  {
     img: "/img/organisers/tejas.png",
     name: "Tejas Nair",
     position: "Software Developer",
