@@ -79,7 +79,7 @@ export const teamData = [
       },
       {
         color: "blue",
-        name: "globe",
+        name: "linkedin",
         href: "https://www.linkedin.com/in/hitansh-doshi-b81530197/"
       },      
     ],
