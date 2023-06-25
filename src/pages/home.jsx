@@ -83,9 +83,9 @@ export function Home() {
                 About
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                OpenConf is an expo event marking the product launch of TCET
-                Open Source. It showcases cutting-edge projects, hosts inspiring
-                keynotes/sessions, and facilitates networking and collaboration.
+                OpenConf is a community event of TCET
+                Open Source. It aims to  hosts inspiring
+                keynotes/sessions, and facilitate networking and collaboration.
                 With a diverse community of developers, industry leaders, and
                 enthusiasts, OpenConf fosters a spirit of transparency and
                 empowerment. It welcomes participants from TCET and outside
