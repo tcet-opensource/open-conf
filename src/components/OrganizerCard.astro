@@ -36,11 +36,12 @@ import { Image } from '@astrojs/image/components';
         person.socials && (
             <div class="  flex gap-2 ">
                 {person.socials.map((s) => (
-                    <a href={s.link} class=" " aria-label={s.platform} >
+                    <a href={s.link} class=" " aria-label={s.platform + " social media"} >
                         <img
                             class="rounded-lg "
                             width="30"
                             height="30"
+                            alt={s.platform}
                             src={`/${s.platform}.svg`}
                         />
                     </a>

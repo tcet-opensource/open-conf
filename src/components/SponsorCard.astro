@@ -15,7 +15,7 @@ const { data } = Astro.props;
         data.sponsors && (
             <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center">
                 {data.sponsors.map((d) => (
-                    <img class="object-contain" src={d} />
+                    <img alt="d" class="object-contain" src={d} />
                 ))}
             </div>
         )
