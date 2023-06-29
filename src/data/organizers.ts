@@ -129,7 +129,7 @@ const organizers: ORGANIZER[] = [
   {
     name: "Asimvaibhav Tiwari",
     position: "Graphics Member, TCET Open Source ",
-    image: "./organisers/asimvaibhav.jpg",
+    image: "/organisers/asimvaibhav.jpg",
     socials: [
       {
         platform: "linkedin",
