@@ -18,7 +18,7 @@ const agendas: AGENDA[] = [
         labels: ["pre-event"],
         people: [findPerson("1"), findPerson("1"), findPerson("1"), findPerson("1")],
     },
-    {``
+    {
         startTime: "10:00 AM",
         endTime: "10:30 AM",
         title: "Opening Ceremony",

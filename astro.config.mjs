@@ -8,5 +8,6 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   base: "/",
-  integrations: [tailwind(), robotsTxt(), sitemap(), image()]
+  integrations: [tailwind(), robotsTxt(), sitemap(), image()],
+  site: "https://openconf.tcetmumbai.in/"
 });
