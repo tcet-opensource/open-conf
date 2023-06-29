@@ -1,5 +1,6 @@
 ---
 import ReserveSpot from "./ReserveSpot.astro";
+import { Image } from '@astrojs/image/components';
 
 ---
 
@@ -27,6 +28,6 @@ import ReserveSpot from "./ReserveSpot.astro";
         <ReserveSpot />
     </div>
     <div class='flex-1' >
-        <img src="/location.png" class="max-w-xl lg:w-4/5 mx-auto " />
+        <Image width={700} alt="TCET Auditorium" height={400} src="/location.png" class="max-w-xl lg:w-4/5 mx-auto rounded-lg" />
     </div>
 </section>

@@ -3,6 +3,8 @@ import type { AGENDA } from "../data/agendas";
 interface Props {
     agenda: AGENDA;
 }
+import { Image } from '@astrojs/image/components';
+
 const { agenda } = Astro.props;
 ---
 
@@ -31,11 +33,14 @@ const { agenda } = Astro.props;
                 (p) =>
                     p && (
                         <span class="flex items-center gap-3 ">
-                            <img
+                            <Image
+                                alt={p.name}
                                 src={p.image}
-                                width="50"
-                                height="50"
-                                class="rounded-full  "
+                                width={150}
+                                height={150}
+                                quality={100}
+                                format="png"
+                                class="rounded-full w-12 h-12 "
                             />
                             <span class="text-slate-600 text-sm">
                                 <p class="font-semibold text-normal">

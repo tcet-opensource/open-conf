@@ -9,7 +9,7 @@ import OrganizerCard from './OrganizerCard.astro';
         <h1 class="text-3xl lg:text-5xl  !leading-[1.2] font-semibold" >Organizers</h1>
         <p class="text-slate-600 max-w-4xl" > The team of amazing organizers behind nurturing open source community through TCET Open Conf to guide young budding developers.</p>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center" >
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-12 justify-center items-stretch" >
         {organizers.map(o => (
             <OrganizerCard person={o} />
         ))}

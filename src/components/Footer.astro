@@ -1,4 +1,6 @@
 ---
+import { Image } from '@astrojs/image/components';
+
 const usefulLinks = [
     { name: "Home", path: "/home" },
     { name: "About us", path: "#about" },
@@ -29,8 +31,15 @@ const otherResources = [
 <footer class="bg-slate-100 p-4 md:p-8 lg:p-16" >
     <div class="flex flex-col py-4 gap-8 lg:flex-row lg:gap-12 justify-between" >
         <div class="space-y-4" >
-            <img src="/openConfLogo.png" width="200" class="" />
-            <!-- <h1 class="text-3xl lg:text-5xl  !leading-[1.2] font-semibold" >OpenConf</h1> -->
+            <a href="/" class="flex items-center">
+                <Image  
+                  width={250}
+                  aspectRatio={2.4}
+                  src="/openConfLogo.png"
+                  class="h-24 object-contain mr-3 bg-blend-overlay"
+                  alt="OpenConf Logo"
+                />
+              </a>
             <p class="text-slate-600 max-w-xl" >
                 OpenConf is a free and open-source conference management system.
             </p>

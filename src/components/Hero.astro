@@ -1,6 +1,7 @@
 ---
-import { Image } from "@astrojs/image/components";
-import Header from "./Header.astro";
+// import { Img } from "astro-imagetools/components";
+import { Image } from '@astrojs/image/components';
+
 import ReserveSpot from "./ReserveSpot.astro";
 ---
 
@@ -41,8 +42,8 @@ import ReserveSpot from "./ReserveSpot.astro";
         </div>
     </div>
     <div class="flex-1" >
-        <img src="/openConf.png" width="700" height="700" class="w-full mx-auto bg-[#1C0040] rounded-lg
-        max-w-md" 
+        <Image src="/openConf.png" width={700} height={700} alt="TCET Open Source OpenConf" class={`w-full mx-auto bg-[#1C0040] rounded-lg
+        max-w-md`}
         style="box-shadow: 0px 1.946465253829956px 1.3903323411941528px 0px rgba(37, 2, 65, 0.04), 0px 4.525683879852295px 3.2326314449310303px 0px rgba(37, 2, 65, 0.06), 0px 8.127079963684082px 5.805057048797607px 0px rgba(37, 2, 65, 0.07), 0px 13.487942695617676px 9.634244918823242px 0px rgba(37, 2, 65, 0.09), 0px 22.220930099487305px 15.872093200683594px 0px rgba(37, 2, 65, 0.10), 0px 38.83574676513672px 27.739818572998047px 0px rgba(37, 2, 65, 0.12), 0px 84px 60px 0px rgba(37, 2, 65, 0.16);"
         />
     </div>

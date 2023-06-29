@@ -4,15 +4,19 @@ interface Props {
     person: ORGANIZER;
 }
 const { person } = Astro.props;
+
+import { Image } from '@astrojs/image/components';
+
 ---
 
-<article class="space-y-4  " >
-    <img
+<article class="flex flex-col justify-start items-center text-center gap-4  " >
+    <Image
         src={person.image}
         alt={person.name}
-        width="400"
-        height="600"
-        class="w-5/6 mx-auto md:w-full h-60 object-cover rounded-lg shadow-lg shadow-gray-500/25"
+        width={600}
+        height={800}
+        alt={person.name}
+        class="w-5/6 mx-auto md:w-full h-60 object-cover rounded-lg shadow-lg shadow-gray-500/25 "
     />
     <div class="space-y-1">
         <p class="font-semibold">
@@ -25,21 +29,22 @@ const { person } = Astro.props;
                 </p>
             )
         }
-        {
-            person.socials && (
-                <div class="mx-auto  flex gap-2 pt-2">
-                    {person.socials.map((s) => (
-                        <a href={s.link} class=" ">
-                            <img
-                                class="rounded-lg "
-                                width="30"
-                                height="30"
-                                src={`/${s.platform}.svg`}
-                            />
-                        </a>
-                    ))}
-                </div>
-            )
-        }
+        
     </div>
+    {
+        person.socials && (
+            <div class="  flex gap-2 ">
+                {person.socials.map((s) => (
+                    <a href={s.link} class=" ">
+                        <img
+                            class="rounded-lg "
+                            width="30"
+                            height="30"
+                            src={`/${s.platform}.svg`}
+                        />
+                    </a>
+                ))}
+            </div>
+        )
+    }
 </article>
