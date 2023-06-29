@@ -25,6 +25,13 @@ import Footer from "../components/Footer.astro";
 		/>
 		<!-- <link rel="stylesheet" href="/font-awesome.min.css"> -->
 		<title>Astro</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#ffffff">
 		<SEO
 			title={"OpenConf - TCET"}
 			description={"Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation, where students and industry experts come together to shape the future of open-source technology."}
@@ -32,7 +39,7 @@ import Footer from "../components/Footer.astro";
 				basic: {
 					title: "OpenConf - TCET",
 					type: "website",
-					image: "/Images/TCET Logo.png",
+					image: "/openConfLogo.png",
 					url: "https://tnp.tcetmumbai.in/",
 				},
 				image: {
@@ -41,12 +48,24 @@ import Footer from "../components/Footer.astro";
 			}}
 			twitter={{
 				title: "OpenConf - TCET",
-				image: "/Images/TCET Logo.png",
+				image: "/openConf.png",
 				card: "summary_large_image",
 				description:
 					"Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation, where students and industry experts come together to shape the future of open-source technology.",
 				creator: "@tcetopensource",
 			}}
+			extend={{
+				meta: [
+				  {
+					name: "og:image",
+					content: "/openConf.png",
+				  },
+				  {
+					name: "og:image:width",
+					content: "500",
+				  },
+				]
+			  }}
 		/>
 	</head>
 	<body class="font-sans max-w-screen overflow-x-hidden " >
