@@ -1,20 +1,23 @@
 ---
 // import { Img } from "astro-imagetools/components";
-import { Image } from '@astrojs/image/components';
+import { Image } from "@astrojs/image/components";
 
 import ReserveSpot from "./ReserveSpot.astro";
 ---
 
-<section id="home" class="relative overflow-visible flex flex-col md:flex-row max-w-screen gap-10 p-4 md:p-10 lg:p-16">
-
-    <div class="space-y-6  relative flex-1" >
-        <a href="/#home" >
-            <img src="/bg1.svg" class="absolute block max-w-none w-[150%] -top-52 -left-40 -z-10 opacity-60
-            md:top-[-30rem] md:left-[-25rem] " />
-        </a>
-        <div class="space-y-2  " >
+<section
+    id="home"
+    class="relative overflow-visible flex flex-col md:flex-row max-w-screen gap-10 p-4 md:p-10 lg:p-16"
+>
+<img
+    src="/bg1.svg"
+    alt="backround gradient"
+    class="absolute block max-w-none w-[150%] md:w-[70%] -top-52 -left-40 -z-10 opacity-60 md:top-[-30rem] md:left-[-25rem]"
+/>
+    <div class="space-y-6 relative flex-1">
+        <div class="space-y-2">
             <span
-            class="bg-slate-100 border bg-opacity-20  border-slate-200 rounded-full px-2 flex w-max py-1 gap-2 text-slate-700 "
+                class="bg-slate-100 border bg-opacity-20 border-slate-200 rounded-full px-2 flex w-max py-1 gap-2 text-slate-700"
                 >21st July 2023
                 <svg
                     width="24"
@@ -31,20 +34,35 @@ import ReserveSpot from "./ReserveSpot.astro";
                         stroke-linejoin="round"></path>
                 </svg>
             </span>
-            <h1 class="text-3xl lg:text-5xl 2xl:text-6xl !leading-[1.2] font-semibold" >
+            <h1
+                class="text-3xl lg:text-5xl 2xl:text-6xl !leading-[1.2] font-semibold"
+            >
                 Discover the Power of Open Source at OpenConf 2023
             </h1>
-            <p class="text-slate-600 lg:text-lg " >Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation!</p>
+            <p class="text-slate-600 lg:text-lg">
+                Unlock the Power of Open Source at TCET OpenConf! Join us for a
+                day of inspiration, collaboration, and cutting-edge innovation!
+            </p>
         </div>
-        <div class="flex gap-4" >
+        <div class="flex gap-4">
             <ReserveSpot />
-            <a href="#FAQs" class="bg-slate-100 bg-opacity-30 hover:bg-opacity-60 border block border-slate-300 px-4 py-2 rounded-lg duration-100" >FAQs</a>
+            <a
+                href="#FAQs"
+                class="bg-slate-100 bg-opacity-30 hover:bg-opacity-60 border block border-slate-300 px-4 py-2 rounded-lg duration-100"
+                >FAQs</a
+            >
         </div>
     </div>
-    <div class="flex-1" >
-        <Image src="/openconf.png" width={700} height={700} alt="TCET Open Source OpenConf" class={`w-full mx-auto bg-[#1C0040] rounded-lg
+    <div class="flex-1">
+        <Image
+            src="/openconf.png"
+            width={700}
+            height={700}
+            format="webp"
+            alt="TCET Open Source OpenConf"
+            class={`w-full mx-auto bg-[#1C0040] rounded-lg
         max-w-md`}
-        style="box-shadow: 0px 1.946465253829956px 1.3903323411941528px 0px rgba(37, 2, 65, 0.04), 0px 4.525683879852295px 3.2326314449310303px 0px rgba(37, 2, 65, 0.06), 0px 8.127079963684082px 5.805057048797607px 0px rgba(37, 2, 65, 0.07), 0px 13.487942695617676px 9.634244918823242px 0px rgba(37, 2, 65, 0.09), 0px 22.220930099487305px 15.872093200683594px 0px rgba(37, 2, 65, 0.10), 0px 38.83574676513672px 27.739818572998047px 0px rgba(37, 2, 65, 0.12), 0px 84px 60px 0px rgba(37, 2, 65, 0.16);"
+            style="box-shadow: 0px 1.946465253829956px 1.3903323411941528px 0px rgba(37, 2, 65, 0.04), 0px 4.525683879852295px 3.2326314449310303px 0px rgba(37, 2, 65, 0.06), 0px 8.127079963684082px 5.805057048797607px 0px rgba(37, 2, 65, 0.07), 0px 13.487942695617676px 9.634244918823242px 0px rgba(37, 2, 65, 0.09), 0px 22.220930099487305px 15.872093200683594px 0px rgba(37, 2, 65, 0.10), 0px 38.83574676513672px 27.739818572998047px 0px rgba(37, 2, 65, 0.12), 0px 84px 60px 0px rgba(37, 2, 65, 0.16);"
         />
     </div>
 </section>
