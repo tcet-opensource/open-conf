@@ -1,0 +1,45 @@
+---
+import type { ORGANIZER } from "../data/organizers";
+interface Props {
+    person: ORGANIZER;
+}
+const { person } = Astro.props;
+---
+
+<article class="space-y-4  " >
+    <img
+        src={person.image}
+        alt={person.name}
+        width="400"
+        height="600"
+        class="w-5/6 mx-auto md:w-full h-60 object-cover rounded-lg shadow-lg shadow-gray-500/25"
+    />
+    <div class="space-y-1">
+        <p class="font-semibold">
+            {person.name}
+        </p>
+        {
+            person.position && (
+                <p class="font-normal text-slate-600 text-sm">
+                    {person.position}
+                </p>
+            )
+        }
+        {
+            person.socials && (
+                <div class="mx-auto  flex gap-2">
+                    {person.socials.map((s) => (
+                        <a href={s.link} class=" ">
+                            <img
+                                class="rounded-lg "
+                                width="30"
+                                height="30"
+                                src={`/${s.platform}.svg`}
+                            />
+                        </a>
+                    ))}
+                </div>
+            )
+        }
+    </div>
+</article>

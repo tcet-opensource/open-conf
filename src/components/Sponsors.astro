@@ -1,0 +1,29 @@
+---
+import sponsors from "../data/sponsors"
+import SponsorCard from "../components/SponsorCard.astro"
+---
+
+<section class="space-y-12 p-4 md:p-10 lg:p-16" >
+    <div class="space-y-6" >
+        <div class="space-y-2" >
+            <h1 class="text-3xl lg:text-5xl  !leading-[1.2] font-semibold" >Sponsors</h1>
+            <p class="text-slate-600 max-w-4xl" >
+                Thank you to our sponsors for their invaluable support and
+                commitment to the community. If you're interested in becoming a
+                sponsor, contact us at <a class="underline" href="mailto:opensource@tcetmumbai.in"
+                >opensource@tcetmumbai.in</a>
+            </p>
+        </div>
+        <a href="#" class="flex bg-purple-600 text-white w-max px-4 py-2 gap-2 rounded-lg hover:bg-purple-500 duration-100" >
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3333 1.33325H3.99996C3.38112 1.33325 2.78763 1.57908 2.35004 2.01667C1.91246 2.45425 1.66663 3.04775 1.66663 3.66659V22.3333C1.66663 22.9521 1.91246 23.5456 2.35004 23.9832C2.78763 24.4208 3.38112 24.6666 3.99996 24.6666H18C18.6188 24.6666 19.2123 24.4208 19.6499 23.9832C20.0875 23.5456 20.3333 22.9521 20.3333 22.3333V8.33325M13.3333 1.33325L20.3333 8.33325M13.3333 1.33325V8.33325H20.3333M15.6666 14.1666H6.33329M15.6666 18.8333H6.33329M8.66663 9.49992H6.33329" stroke="#FCFCFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            Sponsorship Prospectus                
+        </a>
+    </div>
+    <div class="space-y-8" >
+        {sponsors.map(s => (
+            <SponsorCard data={s} />
+        ))}
+    </div>
+</section>

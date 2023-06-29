@@ -1,0 +1,63 @@
+---
+import { SEO } from "astro-seo";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Sponsors from "../components/Sponsors.astro";
+import About from "../components/About.astro";
+import LocationDate from "../components/LocationDate.astro";
+import FAQs from "../components/FAQs.astro";
+import Agendas from "../components/Agendas.astro";
+import Organizers from "../components/Organizers.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="stylesheet" href="/font-awesome.min.css"> -->
+		<title>Astro</title>
+		<SEO
+			title={"OpenConf - TCET"}
+			description={"Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation, where students and industry experts come together to shape the future of open-source technology."}
+			openGraph={{
+				basic: {
+					title: "OpenConf - TCET",
+					type: "website",
+					image: "/Images/TCET Logo.png",
+					url: "https://tnp.tcetmumbai.in/",
+				},
+				image: {
+					width: 400,
+				},
+			}}
+			twitter={{
+				title: "OpenConf - TCET",
+				image: "/Images/TCET Logo.png",
+				card: "summary_large_image",
+				description:
+					"Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation, where students and industry experts come together to shape the future of open-source technology.",
+				creator: "@tcetopensource",
+			}}
+		/>
+	</head>
+	<body class="font-sans max-w-screen overflow-x-hidden " >
+		<Header />
+		<main class=" overflow-visible  " >
+			<Hero />
+			<About />
+			<LocationDate />
+			<Sponsors />
+			<Organizers />			
+			<FAQs />
+			<Agendas />
+		</main>
+	</body>
+</html>

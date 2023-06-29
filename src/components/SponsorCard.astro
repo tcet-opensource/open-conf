@@ -1,0 +1,26 @@
+---
+import type { Sponsor } from "../data/sponsors";
+interface Props {
+    data: Sponsor;
+}
+const { data } = Astro.props;
+---
+
+<div
+    style={`background-color: ${data.color}`}
+    class="w-full text-center py-6 px-4 space-y-4 rounded-xl"
+>
+    <h2 class="text-xl lg:text-3xl text-center">{data.title}</h2>
+    {
+        data.sponsors && (
+            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center">
+                {data.sponsors.map((d) => (
+                    <img class="object-contain" src={d} />
+                ))}
+            </div>
+        )
+    }
+    {data.sponsors?.length == 0 && (
+        <p class="italic" >Coming Soon</p>
+    )}
+</div>

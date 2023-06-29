@@ -1,0 +1,51 @@
+---
+import type { AGENDA } from "../data/agendas";
+interface Props {
+    agenda: AGENDA;
+}
+const { agenda } = Astro.props;
+---
+
+<article class="bg-slate-50 border border-slate-100 rounded-xl p-8 lg:p-12 space-y-6" >
+    <div class="space-y-2" >
+        <span class="text-indigo-600 font-semibold"
+            >{agenda.startTime} -- {agenda.endTime}</span
+        >
+        <h2 class="text-2xl lg:text-3xl !leading-[1.2] font-semibold">
+            {agenda.title}
+        </h2>
+        <p class="text-slate-600">{agenda.description}</p>
+        <span class="flex gap-2 flex-wrap">
+            {
+                agenda.labels.map((l) => (
+                    <span class="rounded-full w-fit bg-slate-100 text-slate-600 border border-slate-200 px-3 py-1 ">
+                        {l}
+                    </span>
+                ))
+            }
+        </span>
+    </div>
+    <div class="grid grid-cols-2 gap-4" >
+        {
+            agenda.people?.map(
+                (p) =>
+                    p && (
+                        <span class="flex items-center gap-3 ">
+                            <img
+                                src={p.image}
+                                width="50"
+                                height="50"
+                                class="rounded-full  "
+                            />
+                            <span class="text-slate-600 text-sm">
+                                <p class="font-semibold text-normal">
+                                    {p.name}
+                                </p>
+                                <p>{p.position}</p>
+                            </span>
+                        </span>
+                    )
+            )
+        }
+    </div>
+</article>

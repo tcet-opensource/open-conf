@@ -1,0 +1,47 @@
+---
+import { Image } from "@astrojs/image/components";
+import Header from "./Header.astro";
+import ReserveSpot from "./ReserveSpot.astro";
+---
+
+<section class="relative overflow-visible flex flex-col md:flex-row max-w-screen gap-10 p-4 md:p-10 lg:p-16">
+
+    <div class="space-y-6  relative flex-1" >
+        <img src="/bg1.svg" class="absolute block max-w-none w-[150%] -top-52 -left-40 -z-10 opacity-60
+        md:top-[-30rem] md:left-[-25rem] " />
+        <div class="space-y-2  " >
+            <span
+            class="bg-slate-100 border bg-opacity-20 border-slate-200 rounded-full px-2 flex w-max py-1 gap-2 text-slate-700 "
+                >21st July 2023
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M12 8L16 12M16 12L12 16M16 12H8M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+                        stroke="#344054"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </span>
+            <h1 class="text-3xl lg:text-5xl 2xl:text-6xl !leading-[1.2] font-semibold" >
+                Discover the Power of Open Source at OpenConf 2023
+            </h1>
+            <p class="text-slate-600 lg:text-lg " >Unlock the Power of Open Source at TCET OpenConf! Join us for a day of inspiration, collaboration, and cutting-edge innovation!</p>
+        </div>
+        <div class="flex gap-4" >
+            <ReserveSpot />
+            <a href="" class="bg-slate-100 bg-opacity-30 hover:bg-opacity-60 border block border-slate-300 px-4 py-2 rounded-lg duration-100" >Home</a>
+        </div>
+    </div>
+    <div class="flex-1" >
+        <img src="/openConf.png" width="700" height="700" class="w-full mx-auto bg-[#1C0040] rounded-lg
+        max-w-md" 
+        style="box-shadow: 0px 1.946465253829956px 1.3903323411941528px 0px rgba(37, 2, 65, 0.04), 0px 4.525683879852295px 3.2326314449310303px 0px rgba(37, 2, 65, 0.06), 0px 8.127079963684082px 5.805057048797607px 0px rgba(37, 2, 65, 0.07), 0px 13.487942695617676px 9.634244918823242px 0px rgba(37, 2, 65, 0.09), 0px 22.220930099487305px 15.872093200683594px 0px rgba(37, 2, 65, 0.10), 0px 38.83574676513672px 27.739818572998047px 0px rgba(37, 2, 65, 0.12), 0px 84px 60px 0px rgba(37, 2, 65, 0.16);"
+        />
+    </div>
+</section>
