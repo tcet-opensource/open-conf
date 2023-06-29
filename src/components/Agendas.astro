@@ -9,7 +9,7 @@ import AgendaCard from "./AgendaCard.astro";
         <h1 class="text-3xl lg:text-5xl  !leading-[1.2] font-semibold" >Agenda</h1>
         <ReserveSpot />
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" >
+    <div class="grid grid-cols-1 gap-8" >
         {agendas.map((agenda) => (
             <AgendaCard agenda={agenda}  />
         ))}

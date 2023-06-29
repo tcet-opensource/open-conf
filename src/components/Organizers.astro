@@ -1,7 +1,7 @@
 ---
 import organizers from '../data/organizers'
 import OrganizerCard from './OrganizerCard.astro';
-console.log(organizers)
+// console.log(organizers)
 ---
 
 <section class="space-y-12 p-4 md:p-10 lg:p-16" >
@@ -9,7 +9,7 @@ console.log(organizers)
         <h1 class="text-3xl lg:text-5xl  !leading-[1.2] font-semibold" >Organizers</h1>
         <p class="text-slate-600 max-w-4xl" > The team of amazing organizers behind nurturing open source community through TCET Open Conf to guide young budding developers.</p>
     </div>
-    <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6" >
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center" >
         {organizers.map(o => (
             <OrganizerCard person={o} />
         ))}

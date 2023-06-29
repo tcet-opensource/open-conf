@@ -12,9 +12,9 @@ const { agenda } = Astro.props;
             >{agenda.startTime} -- {agenda.endTime}</span
         >
         <h2 class="text-2xl lg:text-3xl !leading-[1.2] font-semibold">
-            {agenda.title}
+        {agenda.title}
         </h2>
-        <p class="text-slate-600">{agenda.description}</p>
+        <p class="text-slate-600 max-w-4xl ">{agenda.description}</p>
         <span class="flex gap-2 flex-wrap">
             {
                 agenda.labels.map((l) => (
@@ -25,7 +25,7 @@ const { agenda } = Astro.props;
             }
         </span>
     </div>
-    <div class="grid grid-cols-2 gap-4" >
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" >
         {
             agenda.people?.map(
                 (p) =>

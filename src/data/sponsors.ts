@@ -6,7 +6,7 @@ export interface Sponsor {
 const sponsors: Sponsor[]  = [
     {
         title: "Platinum",
-        sponsors: ["./Company logo.png","./Company logo.png","./Company logo.png","./Company logo.png"],
+        sponsors: [],
         color: "#EFF8FF"
     },
     {

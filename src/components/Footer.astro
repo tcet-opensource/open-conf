@@ -1,0 +1,81 @@
+---
+const usefulLinks = [
+    { name: "Home", path: "/home" },
+    { name: "About us", path: "#about" },
+    { name: "Agenda", path: "#agenda" },
+    { name: "Organizers", path: "#organizers" },
+    { name: "FAQs", path: "#faqs" },
+];
+const otherResources = [
+    {
+        name: "TCET Open Source",
+        path: "https://opensource.tcetmumbai.in/",
+    },
+    {
+        name: "Contribute",
+        path: "https://github.com/tcet-opensource/open-conf",
+    },
+    {
+        name: "Docs",
+        path: "https://opensource.tcetmumbai.in/docs/about-tcetopensource",
+    },
+    {
+        name: "Blog",
+        path: "https://opensource.tcetmumbai.in/blog",
+    },
+];
+---
+
+<footer class="bg-slate-100 p-4 md:p-8 lg:p-16" >
+    <div class="flex flex-col py-4 gap-8 lg:flex-row lg:gap-12 justify-between" >
+        <div class="space-y-4" >
+            <img src="/openConfLogo.png" width="200" class="" />
+            <!-- <h1 class="text-3xl lg:text-5xl  !leading-[1.2] font-semibold" >OpenConf</h1> -->
+            <p class="text-slate-600 max-w-xl" >
+                OpenConf is a free and open-source conference management system.
+            </p>
+            <span class="flex flex-wrap gap-2 lg:gap-4" >
+                <a href="https://twitter.com/tcetopensource"
+                    ><img width="30" height="30" src="/twitter.svg" /></a
+                >
+                <a href="https://www.instagram.com/tcetopensource/"
+                    ><img width="30" height="30" src="/instagram.svg" /></a
+                >
+                <a href="https://www.youtube.com/@TCETMumbaiOfficial"
+                    ><img width="30" height="30" src="/youtube.svg" /></a
+                >
+                <a href="https://github.com/tcet-opensource"
+                    ><img width="30" height="30" src="/github.svg" /></a
+                >
+                <a href="https://opensource.tcetmumbai.in"
+                    ><img width="30" height="30" src="/www.svg" /></a
+                >
+            </span>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-12 lg:mr-20 xl:mr-32" >
+            <span class="space-y-3" >
+                <h2 class="font-medium text-lg" >USEFUL LINKS</h2>
+                <nav class="text-slate-600 flex flex-col gap-1.5" >
+                    {
+                        usefulLinks.map((link) => (
+                            <a class="hover:text-slate-800" href={link.path}>{link.name}</a>
+                        ))
+                    }
+                </nav>
+            </span>
+            <span class="space-y-3" >
+                <h2  class="font-medium text-lg" >OTHER RESOURCES</h2>
+                <nav class="text-slate-600 flex flex-col gap-1.5">
+                    {
+                        otherResources.map((link) => (
+                            <a class="hover:text-slate-800" href={link.path}>{link.name}</a>
+                        ))
+                    }
+                </nav>
+            </span>
+        </div>
+    </div>
+    <a href="https://opensource.tcetmumbai.in"
+      class="text-slate-600 hover:text-slate-700 border-t block pt-4 "  >Copyright © 2023 TCET Open Source.</a
+    >
+</footer>

@@ -5,7 +5,7 @@ export interface ORGANIZER {
   position: string;
   image: string;
   socials?: {
-    platform: "linkedin" | "twitter" | "www";
+    platform: "linkedin" | "twitter" | "www" | "github";
     link: string;
   }[];
 }
@@ -24,6 +24,10 @@ const organizers: ORGANIZER[] = [
         platform: "linkedin",
         link: "https://www.linkedin.com/in/prathik-shetty15/",
       },
+      {
+        platform: "github",
+        link: "https://github.com/prathikshetty2002",
+      },
     ],
   },
   {
@@ -38,6 +42,10 @@ const organizers: ORGANIZER[] = [
       {
         platform: "linkedin",
         link: "https://www.linkedin.com/in/vish-rt/",
+      },
+      {
+        platform: "github",
+        link: "https://github.com/vish-rt",
       },
     ],
   },
@@ -54,6 +62,10 @@ const organizers: ORGANIZER[] = [
         platform: "linkedin",
         link: "https://www.linkedin.com/in/gaurang-vishwakarma/",
       },
+      {
+        platform: "github",
+        link: "https://github.com/demonkillerr",
+      },
     ],
   },
   {
@@ -68,6 +80,10 @@ const organizers: ORGANIZER[] = [
       {
         platform: "linkedin",
         link: "https://www.linkedin.com/in/jayeshvp24/",
+      },
+      {
+        platform: "github",
+        link: "https://github.com/JayeshVP24",
       },
     ],
   },
@@ -84,6 +100,10 @@ const organizers: ORGANIZER[] = [
         platform: "linkedin",
         link: "https://www.linkedin.com/in/hitansh-doshi-b81530197/",
       },
+      {
+        platform: "github",
+        link: "https://github.com/Hitansh159",
+      },
     ],
   },
   {
@@ -99,6 +119,30 @@ const organizers: ORGANIZER[] = [
         platform: "twitter",
         link: "https://twitter.com/kuxshl",
       },
+      {
+        platform: "github",
+        link: "https://github.com/kuxshl",
+      },
+      
+    ],
+  },
+  {
+    name: "Asimvaibhav Tiwari",
+    position: "Graphics Member, TCET Open Source ",
+    image: "./organisers/asimvaibhav.jpg",
+    socials: [
+      {
+        platform: "linkedin",
+        link: "https://www.linkedin.com/in/asimvaibhav/",
+      },
+      {
+        platform: "twitter",
+        link: "https://twitter.com/AsimVaibhav",
+      },
+      {
+        platform: "github",
+        link: "https://github.com/asim-vaibhav-435",
+      },
     ],
   },
   {
@@ -112,6 +156,10 @@ const organizers: ORGANIZER[] = [
       },
       {
         platform: "linkedin",
+        link: "https://www.linkedin.com/in/tejasnair9977/",
+      },
+      {
+        platform: "github",
         link: "https://www.linkedin.com/in/tejasnair9977/",
       },
     ],
