@@ -4,11 +4,13 @@ import Header from "./Header.astro";
 import ReserveSpot from "./ReserveSpot.astro";
 ---
 
-<section class="relative overflow-visible flex flex-col md:flex-row max-w-screen gap-10 p-4 md:p-10 lg:p-16">
+<section id="home" class="relative overflow-visible flex flex-col md:flex-row max-w-screen gap-10 p-4 md:p-10 lg:p-16">
 
     <div class="space-y-6  relative flex-1" >
-        <img src="/bg1.svg" class="absolute block max-w-none w-[150%] -top-52 -left-40 -z-10 opacity-60
-        md:top-[-30rem] md:left-[-25rem] " />
+        <a href="/#home" >
+            <img src="/bg1.svg" class="absolute block max-w-none w-[150%] -top-52 -left-40 -z-10 opacity-60
+            md:top-[-30rem] md:left-[-25rem] " />
+        </a>
         <div class="space-y-2  " >
             <span
             class="bg-slate-100 border bg-opacity-20  border-slate-200 rounded-full px-2 flex w-max py-1 gap-2 text-slate-700 "
@@ -35,11 +37,11 @@ import ReserveSpot from "./ReserveSpot.astro";
         </div>
         <div class="flex gap-4" >
             <ReserveSpot />
-            <a href="" class="bg-slate-100 bg-opacity-30 hover:bg-opacity-60 border block border-slate-300 px-4 py-2 rounded-lg duration-100" >Home</a>
+            <a href="#FAQs" class="bg-slate-100 bg-opacity-30 hover:bg-opacity-60 border block border-slate-300 px-4 py-2 rounded-lg duration-100" >FAQs</a>
         </div>
     </div>
     <div class="flex-1" >
-        <img src="/openconf.png" width="700" height="700" class="w-full mx-auto bg-[#1C0040] rounded-lg
+        <img src="/openConf.png" width="700" height="700" class="w-full mx-auto bg-[#1C0040] rounded-lg
         max-w-md" 
         style="box-shadow: 0px 1.946465253829956px 1.3903323411941528px 0px rgba(37, 2, 65, 0.04), 0px 4.525683879852295px 3.2326314449310303px 0px rgba(37, 2, 65, 0.06), 0px 8.127079963684082px 5.805057048797607px 0px rgba(37, 2, 65, 0.07), 0px 13.487942695617676px 9.634244918823242px 0px rgba(37, 2, 65, 0.09), 0px 22.220930099487305px 15.872093200683594px 0px rgba(37, 2, 65, 0.10), 0px 38.83574676513672px 27.739818572998047px 0px rgba(37, 2, 65, 0.12), 0px 84px 60px 0px rgba(37, 2, 65, 0.16);"
         />
