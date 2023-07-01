@@ -6,15 +6,7 @@ interface FAQS {
 const faqs: FAQS[] = [
     {
         question: "What is the event about?",
-        answer: "OpenConf is an open-source event organized by the TCET open-source community. The event aims to showcase the projects developed by the TCET open-source community through product launches. It also includes lightning talks and a panel discussion featuring open-source experts, CEOs, and advocates. The event is designed for TCET students as well as individuals from outside organizations.",
-    }, 
-    {
-        question: "When is the event taking place?",
-        answer: "The event is scheduled to take place on 21st July,2023 . Please note that the date is subject to change, so we recommend checking the event website or contacting the organizers for the most up-to-date information.",
-    }, 
-    {
-        question: "Where is the event being held?",
-        answer: "OpenConf will be held at Thakur college of engineering and technology, located at Thakur Village,Kandivali (E), Mumbai. Detailed directions and transportation options are provided on the event website.",
+        answer: "OpenConf is an open-source event organized by the TCET open-source community. The event aims to showcase the projects developed by the TCET open-source community through keynote sessions. It also includes lightning talks and a panel discussion featuring open-source experts, CEOs, and advocates. The event is designed for TCET students as well as individuals from outside organizations.",
     }, 
     {
         question: "How can I register for the event?",
@@ -23,10 +15,6 @@ const faqs: FAQS[] = [
     {
         question: "Is there a registration fee for attending the event?",
         answer: "No, there is no registration fee for attending the OpenConf event. It is free of charge for all participants.",
-    }, 
-    {
-        question: "What is the event schedule and agenda?",
-        answer: "The schedule and detailed agenda will be available on the event website closer to the event date, stay tuned.",
     }, 
     {
         question: "Will there be refreshments provided during the event?",

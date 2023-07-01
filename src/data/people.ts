@@ -137,6 +137,19 @@ const people: PEOPLE[] = [
         ],
       },
       {
+        id: "viceprincipal",
+        image: "/Kamal_Shah.jpeg",
+        name: "Dr. Kamal Shah",
+        position: "Vice Principal | TCET",
+        socials: [
+          {
+            platform: "linkedin",
+            link: "https://in.linkedin.com/in/dr-b-k-mishra-9a81131b1"
+          },
+          
+        ],
+      },
+      {
         id: "deanict",
         image: "https://media.licdn.com/dms/image/D4D03AQEwEClz0m1T8Q/profile-displayphoto-shrink_400_400/0/1679379252319?e=1693440000&v=beta&t=9P-DiIZhW_6LOuzoOYY0VrxglhI3X6APX77YuRxyGh8",
         name: "Dr. Rahul Kokale",
