@@ -1,5 +1,4 @@
-import React from "react";
-import Countdown, { CountdownRendererFn } from "react-countdown";
+import Countdown from "react-countdown";
 
 // Random component
 const Completionist = () => <span>Event has Begun</span>;

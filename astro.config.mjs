@@ -12,5 +12,10 @@ export default defineConfig({
   integrations: [tailwind(), robotsTxt(), sitemap(), image({
     serviceEntryPoint: '@astrojs/image/sharp'
   }), react()],
+  // vite: {
+  //   ssr: {
+  //     noExternal: [/^react-countup\/*/, /^react-countdown\/*/ ]
+  //   }
+  // },
   site: "https://openconf.tcetmumbai.in/"
 });
