@@ -34,7 +34,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 const CountDown = () => {
-  return (
+return (
     <div className="" >
       <p className="w-fit  text-xl mb-2 font-medium " >Time Left</p>
       <Countdown date={"2023-07-21T10:30:00"} renderer={renderer} />
