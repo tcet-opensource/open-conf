@@ -24,7 +24,7 @@ const agendas: AGENDA[] = [
         title: "Opening Ceremony",
         description: "Join us for an inspiring kick-off to the event. Get briefed about engaging with distinguished speakers, gain insights into the event's purpose, and set the tone for a day of learning, connection, and collaboration.",
         labels: ["Thakur Management"],
-        people: [findPerson("principal"), findPerson("viceprincipal"), findPerson("deanict"), findPerson("gaurang")],
+        people: [findPerson("principal"), findPerson("viceprincipal"), findPerson("tpo"), findPerson("gaurang")],
     },
     {
         startTime: "11:10 AM",
